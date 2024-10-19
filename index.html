@@ -23,16 +23,16 @@
         <nav id="navbar">
           <div class="icon-container">
             <img class="nav-icon"src="/assets/icons/coding.png" alt="code-icon">
-            <span style="position:inline ; cursor:pointer"><p style="color: black; font-size:2rem; font-weight: 400;">ivan<span style="color: black; font-size:2rem; font-weight: bold;">vargas</span>
+            <span style="position:inline ; cursor:pointer"><p class="icon-name" style="color: black; font-size:2rem; font-weight: 400;">ivan<span style="color: black; font-size:2rem; font-weight: bold;">vargas</span>
             </p></span>
           </div>
           <div class="navigation-container">
             <ul class="nav-links">
               <li><a href="#">Home</a></li>
-              <li>About</li>
+              <li><a href="#">About</a></li>
               <li><a href="#tech-stack">Tech Stack</a></li>
               <li><a href="#projects">Projects</a></li>
-              <li>Contact</li>
+              <li><a href="#">Contact</a></li>
             </ul>
             <!--
             <p>|</p>
@@ -42,6 +42,7 @@
         </nav>
       </div>
       <div class="main-body">
+        <!-- Home Section -->
         <section id="home">
           <div class="home-header-containers">
             <div class="home-header">
@@ -57,6 +58,7 @@
             <img class="profile-pic" src="/assets/images/ayban.JPG" alt="ivan-picture">
           </div>
         </section>
+        <!-- Tech-Stack Section -->
         <section id="tech-stack">
           <div class="containers">
             <div class="techstack-header section-header">
@@ -92,10 +94,10 @@
                   <img class="grid-images" src="/assets/vectors/github.svg" alt="Github Icon" width="100px"height="100px">
               </div>
               <div class="tech-grid-container">
-                  <img class="grid-images" src="/assets/vectors/visual studio.svg" alt="Visual Studio Code Icon" width="100px"height="100px">
-              </div>
+                <img  class="grid-images" src="/assets/images/github-icon.webp" alt="Github Desktop Icon" width="100px"height="100px">
+            </div>
               <div class="tech-grid-container">
-                  <img  class="grid-images" src="/assets/vectors/xampp.svg" alt="Xampp Icon" width="100px"height="100px">
+                  <img class="grid-images" src="/assets/vectors/visual studio.svg" alt="Visual Studio Code Icon" width="100px"height="100px">
               </div>
               <div class="tech-grid-container">
                   <img  class="grid-images" src="/assets/vectors/firefox_developer_edition_browser_logo_icon_152992.ico" alt="firefox_developer_edition_browser_logo" width="100px"height="100px">
@@ -103,6 +105,7 @@
             </div>
           </div>
         </section>
+        <!-- Projects Section -->
         <section id="projects">
           <div class="projects-header section-header">
             <h2>Projects</h2>
@@ -123,8 +126,7 @@
                     <img src="/assets/vectors/css.svg" alt="css" width="20px" height="20px">
                     <img src="/assets//icons/phpMyAdmin.png" alt="phpMyAdmin" width="20px" height="20px">
                   </div>
-                  <button>Code</button>
-                  <button>Demo</button>
+                  <button class="code-btn" id="proj1-code-btn">Code</button>
               </div>
             </div>
             <div class="project-grid-container">
@@ -142,8 +144,7 @@
                   <img src="/assets/vectors/javascript.svg" alt="css" width="20px" height="20px">
                   <img src="/assets/images/emailjs.png" alt="emailjs" width="20px" height="20px">
                 </div>
-                <button>Code</button>
-                <button>Demo</button>
+                <button class="code-btn" id="proj2-code-btn">Code</button>
               </div>
             </div>
             <div class="project-grid-container">
@@ -158,8 +159,8 @@
                   <img src="/assets/vectors/html.svg" alt="html" width="20px" height="20px">
                   <img src="/assets/vectors/css.svg" alt="css" width="20px" height="20px">
                 </div>
-                <button>Code</button>
-                <button>Demo</button>
+                <button class="code-btn" id="proj3-code-btn">Code</button>
+                <button class="demo-btn" id="proj3-demo-btn">Demo</button>
               </div>
             </div>
             <div class="project-grid-container">
@@ -174,8 +175,24 @@
                   <img src="/assets/vectors/html.svg" alt="html" width="20px" height="20px">
                   <img src="/assets/vectors/css.svg" alt="css" width="20px" height="20px">
                 </div>
-                <button>Code</button>
-                <button>Demo</button>
+                <button class="code-btn" id="proj4-code-btn">Code</button>
+                <button class="demo-btn" id="proj4-demo-btn">Demo</button>
+              </div>
+            </div>
+            <div class="project-grid-container">
+              <div class="project-img">
+                <img src="/assets/images/survey_form.png" alt="" width="375px" height="250px">
+              </div>
+              <div class="project-overview">
+                <h3>Survey Form</h3>
+                <p>Designed a responsive survey form that collects user feedback. This project focused on user experience, ensuring that the form is easy to fill out on any device, while also incorporating validation to enhance data accuracy.</p>
+                <div class="techstack-used">
+                  <h3>Tech Stack Used</h3>
+                  <img src="/assets/vectors/html.svg" alt="html" width="20px" height="20px">
+                  <img src="/assets/vectors/css.svg" alt="css" width="20px" height="20px">
+                </div>
+                <button class="code-btn" id="proj5-code-btn">Code</button>
+                <button class="demo-btn" id="proj5-demo-btn">Demo</button>
               </div>
             </div>
             <div class="project-grid-container">
@@ -191,8 +208,8 @@
                   <img src="/assets/vectors/css.svg" alt="css" width="20px" height="20px">
                   <img src="/assets/vectors/javascript.svg" alt="css" width="20px" height="20px">
                 </div>
-                <button>Code</button>
-                <button>Demo</button>
+                <button class="code-btn" id="proj6-code-btn">Code</button>
+                <button class="demo-btn" id="proj6-demo-btn">Demo</button>
               </div>
             </div>
             <div class="project-grid-container">
@@ -208,24 +225,25 @@
                   <img src="/assets/vectors/css.svg" alt="css" width="20px" height="20px">
                   <img src="/assets/vectors/javascript.svg" alt="javascript" width="20px" height="20px">
                 </div>
-                <button>Code</button>
-                <button>Demo</button>
+                <button class="code-btn" id="proj7-code-btn">Code</button>
+                <button class="demo-btn" id="proj7-demo-btn">Demo</button>
               </div>
             </div>
             <div class="project-grid-container">
               <div class="project-img">
-                <img src="/assets/images/survey_form.png" alt="" width="375px" height="250px">
+                <img src="/assets/images/music-player.png" alt="" width="375px" height="250px">
               </div>
               <div class="project-overview">
-                <h3>Survey Form</h3>
-                <p>Designed a responsive survey form that collects user feedback. This project focused on user experience, ensuring that the form is easy to fill out on any device, while also incorporating validation to enhance data accuracy.</p>
+                <h3>Music Player</h3>
+                <p>A simple web-based application I created as part of a freeCodeCamp exercise. It demonstrates the practical application of the Document Object Model (DOM), Strings, and Arrays in JavaScript. The project allows users to play, pause, and switch between different audio tracks. The music player interface features basic controls for playback and displays the current track information. It showcases the use of JavaScript to manipulate the DOM, handle user interactions, and manage an array of audio files dynamically, making it a useful exercise for learning fundamental web development concepts.</p>
                 <div class="techstack-used">
                   <h3>Tech Stack Used</h3>
                   <img src="/assets/vectors/html.svg" alt="html" width="20px" height="20px">
                   <img src="/assets/vectors/css.svg" alt="css" width="20px" height="20px">
+                  <img src="/assets/vectors/javascript.svg" alt="javascript" width="20px" height="20px">
                 </div>
-                <button>Code</button>
-                <button>Demo</button>
+                <button class="code-btn" id="proj8-code-btn">Code</button>
+                <button class="demo-btn" id="proj8-demo-btn">Demo</button>
               </div>
             </div>
             <div class="project-grid-container">
@@ -241,8 +259,8 @@
                   <img src="/assets/vectors/css.svg" alt="css" width="20px" height="20px">
                   <img src="/assets/vectors/javascript.svg" alt="javascript" width="20px" height="20px">
                 </div>
-                <button>Code</button>
-                <button>Demo</button>
+                <button class="code-btn" id="proj9-code-btn">Code</button>
+                <button class="demo-btn" id="proj9-demo-btn">Demo</button>
               </div>
             </div>
             <div class="project-grid-container">
@@ -258,8 +276,8 @@
                   <img src="/assets/vectors/css.svg" alt="css" width="20px" height="20px">
                   <img src="/assets/vectors/javascript.svg" alt="javascript" width="20px" height="20px">
                 </div>
-                <button>Code</button>
-                <button>Demo</button>
+                <button class="code-btn" id="proj10-code-btn">Code</button>
+                <button class="demo-btn" id="proj10-demo-btn">Demo</button>
               </div>
             </div>
           </div>

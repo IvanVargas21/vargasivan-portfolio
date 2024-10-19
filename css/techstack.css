@@ -16,6 +16,9 @@
     grid-auto-rows: minmax(50px, auto);
   }
   .tech-grid-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 15.0rem;
     height: 15.0rem;
   }

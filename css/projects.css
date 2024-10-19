@@ -8,12 +8,18 @@
 .projects-grid-wrapper{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 20px 30px;
+    gap: 40px 20px;
 }
 .project-grid-container{
     border-radius: 10px;
-    padding: 10px 10px;
+    padding: 20px 20px;
     box-shadow: 0px 10px 51px -19px rgba(0,0,0,0.73);
+    transition: border 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.project-grid-container:hover{
+    cursor: pointer;
+    border: 2px solid rgb(156, 155, 155);
+    transform: scale(1.05);
 }
 .techstack-used{
     margin-bottom: 15px;

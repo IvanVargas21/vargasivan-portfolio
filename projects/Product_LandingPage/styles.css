@@ -1,0 +1,400 @@
+:root {
+    --taylor-colorRed: #aa1f23;
+    --btn-hovercolor: #393939;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+html{
+    /*
+    It will sett the default size for my webpage to 10px
+    (the browser default is 16px). 
+    Just to make it easier for me to work with 'rem' units later on.
+    2rem would be 20px.
+    */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: "Gotham SSm A","Gotham SSm B",sans-serif;
+    color: #212A2F;
+    min-width: 770px;
+    
+}
+.main-header{
+    background-color: var(--taylor-colorRed);
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+#header {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.header-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    gap: 30px;
+    font-size: 1.8rem;
+    color: #FFF;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 0.1rem;
+}
+.header-right{
+ display: flex;
+ align-items: center;
+ margin-right: 30px;
+
+}
+#header-img{
+    height: 5.5rem;
+    width: 12rem;
+}
+.tag span.first {
+    font-style: italic;
+}
+.tag span.second {
+    text-transform: uppercase;
+
+}
+#nav-bar > ul {
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+#nav-bar a:hover {
+    color: black;
+}
+#nav-bar li{
+    font-size: 1.8rem;
+    list-style-type: none;
+}
+#nav-bar li > a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#hero {
+    width: 100%;
+}
+.hero-img{
+    width: 100%;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    object-fit: cover;
+}
+.hero-msg {
+    position: absolute;
+    top: 35vh;
+    color: white;
+    width: 400px;
+    margin-left: 50px;
+}
+.hero-intro{
+    font-size: 32px;
+    font-weight: 600;
+    margin:0px 0px 10px 0px;
+}
+.hero-prgrph {
+    font-size: 18px;
+    font-family:"Gotham SSm A","Gotham SSm B",sans-serif ;
+    font-weight: 400;
+}
+.hero-button1, .hero-button2{
+    display: block;
+    margin-bottom: 10px;
+    background-color: var(--taylor-colorRed);
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+.hero-button1:hover, .hero-button2:hover{
+    background-color: var(--btn-hovercolor);
+}
+#About {
+    height: 464px;
+    width: 100%;
+    padding-top: 95px;
+    padding-bottom: 50px;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: hsl(49, 89%, 93%);
+}
+.About-content {
+    padding: 0px 150px;
+}
+.About-content > h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-family: "Sentinel SSm A", "Sentinel SSm B", serif;
+    line-height: 34px;
+    text-align: left;
+}
+.paragraph-contents > p {
+    font-size: 1.8rem;
+    line-height: 1.7;
+    margin: 0 0 20px;
+}
+span {
+    color:var(--taylor-colorRed);
+}
+.first, .second {
+    color: #FFF;
+}
+span.hyperlinks {
+    font-size: 1.8rem;
+}
+#Artists {
+    height: 430px;
+    width: 100%;
+    padding: 30px 0px 150px 30px;
+    color: aliceblue;
+    background-color: var(--taylor-colorRed);
+}
+.Artists-content > h2{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-family: "Sentinel SSm A", "Sentinel SSm B", serif;
+    line-height: 34px;
+    text-align: center;
+}
+.Artist-1 {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+#Products {
+    padding: 90px 30px;
+    width: 100%;
+    height: 900px;
+}
+#Products-header > h2{
+    font-size: 32px;
+    margin: 0 0 18px;
+    text-align:  center;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    font-family: "Sentinel SSm A", "Sentinel SSm B", serif;
+}
+#Products-header > p{
+    text-align:  center;
+    margin: 0 0 21px;
+    font-size: 21px;
+    font-weight: 400;
+    color: var(--taylor-colorRed);
+}   
+
+.products-main-container {
+    max-width: 100%;
+    flex-shrink: 1;
+    display: flex;
+    flex-shrink: 1;
+    padding: 0 65px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
+    position: relative;
+}
+.Product-containers{
+    height: 646px;
+    min-height: 622px;
+    width: 270px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    box-shadow: 0px 6px 6px 0px #D3D4D5;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+.Product-imgs{
+    display: block;
+    max-width: 100%;
+    min-height: 70px;
+
+}
+img {
+    max-width: 100%;
+    max-width: 100%;
+}
+.Product-contents{
+    display: flex; 
+    flex-grow: 1;/*to allow this div to grow and fill the remaining space*/
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 18px 30px;
+    justify-content: space-between;
+   
+}
+
+.Product-contents h2{
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 23.04px; /* 23.04 - font-size */
+    font-family: "Sentinel SSm A", "Sentinel SSm B", serif;
+    
+    padding-bottom: 5px;
+}
+.Product-hdr{
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+.Product-price {
+    text-align: center;
+    font-family: "Sentinel SSm A","Sentinel SSm B",serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23.04px;
+    letter-spacing: 0.5px;
+
+}
+.price-currency{
+    font-size: 15px;
+    color: #212A2F;
+}
+.prdct-price-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Product-button1, .Product-button2 {
+    position: relative;
+    bottom: 0px;
+    min-width: 150px;
+    min-height: 38px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.Product-button1 {
+    background-color: var(--taylor-colorRed);
+    color: aliceblue;
+    
+}
+.Product-button1:hover {
+    background-color: var(--btn-hovercolor);
+}
+#Sign-Up{
+    background-color: var(--taylor-colorRed);
+    color: aliceblue;
+    flex-direction: row;
+    max-width: 100%;
+    max-height: 350px;
+    padding: 60px 30px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#Sign-Up .inner-content {
+    display: flex; /* Flex display for inner-content to align col-left and col-right */
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 50px;
+}
+.col-left form {
+    display: inline-block;
+}
+#Sign-Up .col-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    text-align: left;
+    max-height: 100%;
+}
+#Sign-Up .col-left form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+}
+#Sign-Up .col-left input[type="email"],
+#Sign-Up .col-right input[type="submit"] {
+    width: 100%;
+}
+#Sign-Up .col-left input[type="email"] {
+    max-width: 275px;
+    padding: 5px;
+    
+}
+#Sign-Up .col-left input[type="submit"] {
+    max-width: 150px;
+    padding: 5px;
+    height: 30px;
+    margin: 15px;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--btn-hovercolor);
+    color: #FFF;
+}
+#Sign-Up .col-left input[type="submit"]:hover{
+    background-color: #212A2F;
+}
+.col-left h2 {
+    font-size: 35px;
+    font-family: "Sentinel SSm A", "Sentinel SSm B", serif;
+    margin-bottom: 15px;
+}
+.col-left p{
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 0 0 15px 0;
+}
+#Sign-Up .col-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+    right: 0;
+}
+
+.col-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-right img{
+    width: 244px;
+    height: 189px;
+    margin: 0 70px;
+}
+@media (max-width: 1350px) {
+    #Products {
+        height: 1550px; 
+        
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .paragraph-contents > p {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        margin: 0 0 10px;
+    }
+    .prdct-price-btn {
+        flex-shrink: 1;
+    }
+
+}

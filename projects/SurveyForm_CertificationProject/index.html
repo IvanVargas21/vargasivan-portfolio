@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Your feedback is important to us—please take a moment to complete our survey and help shape the future of freeCodeCamp!</p>
+      
+      <form action=""id="survey-form" required type="text">
+        <div class="form-div"> 
+          <label id="name-label" for="name">Name </label>
+          <input id="name" type="text" required placeholder="Enter your name"/>
+          </div>
+        <div class="form-div"> 
+          <label id="email-label" for="email"> Email </label><input id="email" type="email" required placeholder="Enter your email"/>
+        </div>
+        <div class="form-div"> 
+          <label id="number-label" for="number" >Age (optional)</label>
+          <input id="number" type="number" placeholder="Enter your Age" min="1" max="50"/>
+        </div>
+          <div class="form-div" >
+            <label id="dropdown-label">Select your coding experience:
+              <select id="dropdown"name="dropdown">
+                <option value="">Choose one of the options </option>
+                <option value="1"> Beginner</option>
+                <option value="2"> Intermediate</option>
+                <option value="3"> Advanced</option>
+                <option value="4"> Expert</option>
+                </select>
+            </label>
+          </div>
+          
+          <div >
+            <legend id="first-lgnd">Which type of content do you find most helpful?</legend>
+          </div>
+          <div class="form-radio">
+            <label id="video"for="option1"><input id="option1" type="radio" name="radio" checked value="video">Video: "Video tutorials"</label>
+          </div>
+          <div class="form-radio">
+            <label id="text'for="option2" ><input type="radio" name="radio"value="text"/>Text: "Written articles"</label>
+          </div>
+            <legend  id="second-lgnd" >Which topics are you most interested in learning about? (Select all that apply)</legend>
+              <label><input type="checkbox" value="option1" >HTML/CSS</label>
+              <label><input type="checkbox"value="option2">Javascript</label>
+              <label><input type="checkbox"value="option3">Python</label>
+          <hr>
+            <div id="user-comment">
+              <label id="comment" for="comments">Do you have any additional comments or suggestions? <textarea  id="comments" placeholder="Enter your comment here.." rows="4" cols="80" ></textarea></label>
+            </div> 
+              <div class="form-div btn">
+                <input id="submit" type="submit" value="Submit"/>
+              </div>
+       </form >
+      </body>
+</html>

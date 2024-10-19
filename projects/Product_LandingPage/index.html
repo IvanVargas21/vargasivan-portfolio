@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!--page-wrapper - common element used in webdev to contain and organize the main content of a webpage-->
+    <div id="page-wrapper">
+      <div class="main-header">
+        <header id="header">
+          <div class="header-left">
+            <div class="logo">
+              <img
+                id="header-img"
+                src="https://www.taylorguitars.com/themes/custom/tg_theme/images/desktop-logo.svg?v1"
+                alt="Taylor Guitars Logo"
+              />
+            </div>
+            <div class="tag">
+              <span class="first">Step forward.</span>
+              <span class="second"> Music is Waiting</span> ™
+            </div>
+          </div>
+          <div class="header-right">
+            <nav id="nav-bar">
+              <ul>
+                <li><a class="nav-link" href="#About">About</a></li>
+                <li><a class="nav-link" href="#Artists">Artists</a></li>
+                <li><a class="nav-link" href="#Products">Guitars</a></li>
+                <li><a class="nav-link" href="#Sign-Up">Sign Up</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      </div>
+      <section id="hero">
+        <img
+          class="hero-img"
+          src="https://www.taylorguitars.com/sites/default/files/images/2024-04/TAYLOR-HERO-DESKTOP-L2-1920x836%5B25%5D.jpg"
+          alt="Taylor 50th Anniversary "
+        />
+        <div class="hero-msg">
+          <div class="hero-intro">
+            <h2>Introducing the 50th Anniversary Collection</h2>
+          </div>
+          <div class="hero-prgrph">
+            <p>
+              Explore a family of specially appointed limited-edition guitars
+              celebrating five decades of craftsmanship and innovation.
+            </p>
+          </div>
+          <div class="hero-btns">
+            <button class="hero-button1" type="button">Meet the Guitars</button>
+            <button class="hero-button2" type="button">
+              Explore the Timeline
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <section id="About">
+          <div class="About-content">
+            <h2>About Taylor Guitars</h2>
+            <div class="paragraph-contents">
+              <p>
+                Taylor Guitars was founded in 1974 by
+                <span>Bob Taylor and Kurt Listug</span>, and has grown into the
+                leading global builder of premium acoustic guitars. Renowned for
+                blending modern, innovative manufacturing techniques with a
+                master craftsman's attention to detail, Taylor acoustic guitars
+                are widely considered among the best-sounding and easiest to
+                play in the world. The company is a pioneer in the use of
+                computer mills, lasers and other high-tech tools and proprietary
+                machinery, and today, Bob Taylor is widely recognized throughout
+                the musical instrument industry as the visionary acoustic guitar
+                manufacturer.
+              </p>
+            </div>
+            <span class="hyperlinks">Read More...</span>
+          </div>
+        </section>
+        <section id="Artists">
+          <div class="Artists-content">
+            <h2>Featured Artist</h2>
+            <div class="Artist-1">
+              <!--
+                        *Use iframe if you want to embed a video hosted on an external pllatform like yt
+                        *Use video tag if you have directacces to video or you wan to host it yourself on your server
+                        -->
+              <iframe
+                id="video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/rSIykbc2hVY?si=oRZzNDne5-APuQVp"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+        <section id="Products">
+          <div id="Products-header">
+            <h2>Trending Guitars</h2>
+            <p>
+              <span
+                >Model recommendations handpicked by Taylor factory staff,
+                artists, and fans.</span
+              >
+            </p>
+          </div>
+          <div class="products-main-container">
+            <div class="Product-containers" id="Guitar1">
+              <div class="Product-imgs">
+                <img
+                  src="https://www.taylorguitars.com/sites/default/files/styles/guitar_compare_crop_large_2x/public/images/2024-01/taylor-be-814ce-1209203104-frontleft-2023.png?itok=lrt6rESt"
+                  alt="50th Anniversary Builder's Edition S14ce LTD"
+                />
+              </div>
+              <div class="Product-contents">
+                <div class="Product-hdr">
+                  <h2>50th Anniversary Builder's Edition 814ce</h2>
+                </div>
+                <div class="prdct-price-btn">
+                  <p class="Product-price">
+                    $4,999 <span class="price-currency">USD</span>
+                  </p>
+                  <div class="Product-buttons">
+                    <div class="prdct-btns">
+                      <button class="Product-button1" type="button">
+                        Find Locally
+                      </button>
+                    </div>
+                    <div class="prdct-btns">
+                      <button class="Product-button2" type="button">
+                        View Details
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Product-containers" id="Guitar2">
+              <div class="Product-imgs">
+                <img
+                  src="https://www.taylorguitars.com/sites/default/files/styles/guitar_compare_crop_large_2x/public/images/2024-03/Taylor-210ce-Plus-2210113409-FrontLeft-2023.png?itok=64--AH1T"
+                  alt="210ce Plus"
+                />
+              </div>
+              <div class="Product-contents">
+                <div class="Product-hdr"><h2>210ce Plus</h2></div>
+                <div><hr /></div>
+                <div class="prdct-price-btn">
+                  <p class="Product-price">
+                    $1,399 <span class="price-currency">USD</span>
+                  </p>
+                  <div class="Product-buttons">
+                    <div class="prdct-btns">
+                      <button class="Product-button1" type="button">
+                        Find Locally
+                      </button>
+                    </div>
+                    <div class="prdct-btns">
+                      <button class="Product-button2" type="button">
+                        View Details
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Product-containers" id="Guitar3">
+              <div class="Product-imgs">
+                <img
+                  src="https://www.taylorguitars.com/sites/default/files/styles/guitar_compare_crop_large_2x/public/images/2022-05/Taylor-724ce-1201272186-FrontLeft-2022_0.png?itok=c99Gy_wg"
+                  alt="724ce"
+                  alt=""
+                />
+              </div>
+              <div class="Product-contents">
+                <div class="Product-hdr"><h2>724ce</h2></div>
+                <hr />
+                <div class="prdct-price-btn">
+                  <p class="Product-price">
+                    $3,799 <span class="price-currency">USD</span>
+                  </p>
+                  <div class="Product-buttons">
+                    <div class="prdct-btns">
+                      <button class="Product-button1" type="button">
+                        Find Locally
+                      </button>
+                    </div>
+                    <div class="prdct-btns">
+                      <button class="Product-button2" type="button">
+                        View Details
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Product-containers" id="Guitar4">
+              <div class="Product-imgs">
+                <img
+                  src="https://www.taylorguitars.com/sites/default/files/styles/guitar_compare_crop_large_2x/public/images/2024-03/Taylor-GS-Mini-e-Rosewood-SB-2210203411-FrontLeft-2023.png?itok=WdJDCEn7"
+                  alt="50th Anniversary GS Mini-e Rosewood SB LTD"
+                  alt=""
+                />
+              </div>
+              <div class="Product-contents">
+                <div class="Product-hdr">
+                  <h2>50th Anniversary GS Mini-e Rosewood SB LTD</h2>
+                </div>
+                <hr />
+                <div class="prdct-price-btn">
+                  <p class="Product-price">
+                    $899 <span class="price-currency">USD</span>
+                  </p>
+                  <div class="Product-buttons">
+                    <div class="prdct-btns">
+                      <button class="Product-button1" type="button">
+                        Find Locally
+                      </button>
+                    </div>
+                    <div class="prdct-btns">
+                      <button class="Product-button2" type="button">
+                        View Details
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="Services"></section>
+        <section id="Sign-Up">
+          <div class="inner-content">
+            <div class="col-left">
+              <h2>Become a Taylor Insider</h2>
+              <form
+                id="form"
+                action="https://www.freecodecamp.com/email-submit"
+              >
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Please enter your email address"
+                />
+                <input
+                  id="submit"
+                  name="submit"
+                  type="submit"
+                  class="form-btn"
+                />
+              </form>
+              <p>
+                Subsribe now for emails with guitar giveaways and prizes, cool
+                deals, guitar news and more from Taylor Guitars
+              </p>
+            </div>
+            <div class="col-right">
+              <img
+                src="https://www.taylorguitars.com/themes/custom/tg_theme/images/logo-circular.svg"
+                alt="Taylor Guitars Logo"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

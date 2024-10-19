@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web Design</title>
+    <link
+      rel="stylesheet"
+      href="./styles.css"
+    />
+  </head>
+  <body>
+    <nav id="top-bar">
+      <div id="main-header">
+        <img id="logo" alt="freeCodeCamp" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+      </div>
+    </nav>
+    <nav id="navbar">
+      <header>RWD Documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Responsive_Web_Design_-_Introduction"
+            >Responsive Web Design - Introduction</a
+          >
+        </li>
+        <li><a class="nav-link" href="#The_Viewport">The Viewport</a></li>
+        <li><a class="nav-link" href="#Grid-View">Grid-View</a></li>
+        <li><a class="nav-link" href="#Media_Queries">Media Queries</a></li>
+        <li><a class="nav-link" href="#Images">Images</a></li>
+        <li><a class="nav-link" href="#Videos">Videos</a></li>
+        <li><a class="nav-link" href="#Frameworks">Frameworks</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Responsive_Web_Design_-_Introduction">
+        <!--
+                The <header> element represents a container for introductory content or a set of navigational links.
+                Typically contains one or more h1-h6, logo or icon, authorship info.
+                -->
+        <header>Responsive Web Design - Introduction</header>
+        <!--
+                The <article> element in HTML is used to represent a self-contained piece of content 
+                    that is intended to be independently distributable or reusable. The content within
+                    an <article> should make sense on its own and should be able to stand alone if taken
+                    out of the context of the page. The content inside each <article> would be a complete 
+                    piece of writing, including the title, author, publication date, and the body of the post.
+                    Common use:blog posts, news articles,  forum posts, magazine articles, or any other similar
+                    pieces of content.
+                -->
+        <article>
+          <h3>What is Responsive Web Design?</h3>
+          <p>
+            Responsive Web Design (RWD) is an approach to web development that
+            ensures websites provide an optimal viewing experience across a wide
+            range of devices and screen sizes, from desktop computers to
+            smartphones and tablets. The goal is to create web pages that adapt
+            to the user's environment, providing a seamless and user-friendly
+            experience regardless of the device being used.
+          </p>
+          <p id="rwd-p">Key Principles of Responsive Web Design:</p>
+          <ol id="rwd-key-principles">
+            <li class="rwd_principle">Fluid Grids:</li>
+            <p>
+              In responsive design, layouts are built using fluid grids, where
+              elements are sized relative to the screen or parent container,
+              often using percentages rather than fixed units like pixels. This
+              allows the layout to adjust and reflow as the screen size changes.
+            </p>
+            <li class="rwd_principle">Flexible Images:</li>
+            <p>
+              Images and media in a responsive web design are also made
+              flexible, ensuring they resize within their containing elements or
+              viewport. This prevents images from overflowing or being too small
+              on various devices.
+            </p>
+            <li class="rwd_principle">Media Queries:</li>
+            <p>
+              Media queries are a fundamental tool in responsive design,
+              allowing developers to apply different styles based on the
+              characteristics of the device, such as screen width, height, or
+              resolution. This enables the design to adapt at specific
+              breakpoints, ensuring the content looks good on all devices.
+            </p>
+            <li class="rwd_principle">Mobile-First Design:</li>
+            <p>
+              A mobile-first approach involves designing for the smallest screen
+              sizes first, then progressively enhancing the design for larger
+              screens. This approach helps ensure that essential content is
+              accessible on all devices, with additional features and styles
+              added for larger screens.
+            </p>
+          </ol>
+        </article>
+      </section>
+      <hr />
+      <section class="main-section" id="The_Viewport">
+        <header>The Viewport</header>
+        <article>
+          <h3>What is The Viewport?</h3>
+          <p>The viewport is the user's visible area of a web page.</p>
+          <p>
+            The viewport varies with the device, and will be smaller on a mobile
+            phone than on a computer screen.
+          </p>
+          <p>
+            Before tablets and mobile phones, web pages were designed only for
+            computer screens, and it was common for web pages to have a static
+            design and a fixed size.
+          </p>
+          <p>
+            Then, when we started surfing the internet using tablets and mobile
+            phones, fixed size web pages were too large to fit the viewport. To
+            fix this, browsers on those devices scaled down the entire web page
+            to fit the screen.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Grid-View">
+        <header>Grid-View</header>
+        <h3>What is Grid-View?</h3>
+        <p>
+          Many web pages are based on a grid-view, which means that the page is
+          divided into columns:
+        </p>
+        <div class="grid-container" id="grid1">
+          <div class="grid-column"></div>
+        </div>
+        <p>
+          Using a grid-view is very helpful when designing web pages. It makes
+          it easier to place elementss on the page.
+        </p>
+        <p>
+          A responsive grid-view often has 12 columns, and has a total width of
+          100%, and will shrink and expand as you resize the browser window.
+        </p>
+        <div class="grid-container" id="grid2">
+          <div class="grid-column">
+            <div id="horizontal-top"></div>
+            <div id="broken-box-left"></div>
+            <div id="box-right"></div>
+            <div id="horizontal-bottom"></div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="main-section" id="Media_Queries">
+        <header>Media Queries</header>
+        <h3>What is a Media Query?</h3>
+        <p>Media query is a CSS technique introduced in CSS3.</p>
+        <p>
+          It uses the <span>@media</span> rule to include a block of CSS
+          properties only if a certain condition is true.
+        </p>
+        <div class="example-container">
+          <p class="examples">Example:</p>
+          <p>
+            If the browser window is 600px or smaller, the background color will
+            be lightblue:
+          </p>
+          <!--
+                    The <code> tag is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.
+                    -->
+          <code>
+            @media only screen and (max-width: 600px) {<br />
+            body{ background-color: lightblue; <br />
+            } <br />
+            }
+          </code>
+        </div>
+      </section>
+      <hr />
+      <section class="main-section" id="Images">
+        <header>Images</header>
+        <h3>Using The width Property</h3>
+        <p>
+          If the width property is set to a percentage and the height property
+          is set to "auto", the image will be responsive and scale up and down:
+        </p>
+        <p class="examples">Example:</p>
+        <div class="example-container">
+          <code>
+            img { <br />
+            width: 100%;<br />
+            height: auto;<br />
+            }
+          </code>
+          <p>
+            Notice that in the example above, the image can be scaled up to be
+            larger than its original size. A better solution, in many cases,
+            will be to use the <span>max-width</span> property instead.
+          </p>
+
+          <h3>Using The max-width Property</h3>
+          <p>
+            If the <span>max-width</span> property is set to 100%, the image
+            will scale down if it has to, but never scale up to be larger than
+            its original size:
+          </p>
+          <p class="Example">Example:</p>
+          <code>
+            img { <br />
+            max-width: 100%;<br />
+            height: auto;<br />
+            }
+          </code>
+        </div>
+      </section>
+      <hr />
+      <section class="main-section" id="Videos">
+        <header>Videos</header>
+        <h3>Using The width Property</h3>
+        <p>
+          If the <span>width</span> property is set to 100%, the video player
+          will be responsive and scale up and down:
+        </p>
+        <div class="example-container">
+          <p>Example:</p>
+          <code>
+            video { <br />
+            width: 100%;<br />
+            height: auto;<br />
+            }
+          </code>
+        </div>
+        <p>
+          Notice that in the example above, the video player can be scaled up to
+          be larger than its original size. A better solution, in many cases,
+          will be to use the <span>max-width</span> property instead.
+        </p>
+        <h3>Using The max-width Property</h3>
+        <p>
+          If the <span>max-width</span> property is set to 100%, the video
+          player will scale down if it has to, but never scale up to be larger
+          than its original size:
+        </p>
+        <div class="example-container">
+          <p>Example:</p>
+          <code>
+            video { <br />
+            max-width: 100%;<br />
+            height: auto;<br />
+            }
+          </code>
+        </div>
+        <p>
+          Notice that in the example above, the video player can be scaled up to
+          be larger than its original size. A better solution, in many cases,
+          will be to use the <span>max-width</span> property instead.
+        </p>
+      </section>
+      <section class="main-section" id="Frameworks">
+        <header>Frameworks</header>
+        <h3>What is Framework?</h3>
+        <p>
+          CSS frameworks are pre-prepared libraries that simplify and streamline
+          the process of creating websites with CSS. These frameworks provide a
+          foundation of pre-written CSS and, often, JavaScript, to help
+          developers quickly build responsive and aesthetically pleasing
+          websites. By using a CSS framework, developers can avoid writing
+          common styles from scratch, saving time and ensuring consistency
+          across web projects.
+        </p>
+        <p>Example of a Popular CSS Framework: <strong>Bootstrap</strong></p>
+        <p>
+          Bootstrap is one of the most popular CSS frameworks. It was originally
+          developed by Twitter and is widely used for creating responsive and
+          mobile-first websites. Bootstrap includes a wide array of components
+          and utilities, making it easier to build complex layouts and
+          interactive elements.
+        </p>
+        <br />
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <ul>
+          <li>
+            All the documentation in this page is taken from
+            <a class="links" href="https://www.w3schools.com/css/css_rwd_intro.asp">W3Schools</a>.
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
