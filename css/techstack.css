@@ -1,0 +1,28 @@
+/* TechStack Section */
+  #tech-stack{
+    height: 100vh;
+  }
+  #tech-stack .containers{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .tech-grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px 20px;
+    grid-auto-rows: minmax(50px, auto);
+  }
+  .tech-grid-container{
+    width: 15.0rem;
+    height: 15.0rem;
+  }
+  .tech-grid-container img{
+    transition: width 0.25s ease-in, height 0.25s ease-in;
+  }
+  .tech-grid-container img:hover{
+    width: 150px;
+    height: 150px;
+  }

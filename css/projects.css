@@ -1,0 +1,21 @@
+/* Projects Section */
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.projects-grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px 30px;
+}
+.project-grid-container{
+    border-radius: 10px;
+    padding: 10px 10px;
+    box-shadow: 0px 10px 51px -19px rgba(0,0,0,0.73);
+}
+.techstack-used{
+    margin-bottom: 15px;
+}
+/* toottip on each button required */
