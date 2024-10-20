@@ -59,20 +59,50 @@
   margin: 0 auto;
   padding: 10px 0;
 }
+.section-header h2{
+  font-size: 4.0rem;
+  margin-bottom: 0px;
+  color: var(--solid-heading);
 }
-@media (max-width: 768px){
+.section-header p{
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+}
+}
+@media (max-width: 767px){
   .wrapper{
     max-width: 90vw;
     padding: 10px 0;
   }
+  .section-header h2{
+    font-size: 3.2rem;
+    margin-bottom: 0px;
+    color: var(--solid-heading);
+  }
+  .section-header p{
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+  }
 }
 @media (min-width: 480px) and (max-width: 640px){
+  .main-body{
+    align-items: space-between;
+  }
   .wrapper{
     max-width: 100vw;
     padding: 10px 0;
     margin: 0;
   }
-  .main-body{
-    padding-top: 40px;
+  .section-header h2{
+    font-size: 3.2rem;
+    margin-bottom: 0px;
+    color: var(--solid-heading);
+  }
+  .section-header p{
+    font-size: 1.4rem;
+    margin-bottom: 20px;
   }
 }
+
+
+/* check out the clamp function in css */

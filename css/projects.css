@@ -23,5 +23,32 @@
 }
 .techstack-used{
     margin-bottom: 15px;
+    -o-object-fit: cover;
+}
+.project-img img{
+    position: relative;
+    width: 100%;
 }
 /* toottip on each button required */
+
+@media (min-width: 768px) and (max-width: 1300px){
+    .projects-grid-wrapper{
+        margin: 0 auto;
+        grid-template-columns: repeat(2,1fr);
+        gap: auto;
+        place-content: center;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px){
+    #projects{
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .projects-grid-wrapper{
+        margin: 0 30px;
+        grid-template-columns: repeat(1,1fr);
+        gap: auto 0;
+       
+    }
+}

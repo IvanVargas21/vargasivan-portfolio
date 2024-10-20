@@ -256,7 +256,7 @@ color: black;
     padding: 0 15px;
     cursor: pointer;
     font-weight:500;
-    color: var(--dark-content);
+    color: grey;
   }
   .nav-links a{
   text-decoration: none;

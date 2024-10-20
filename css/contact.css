@@ -1,0 +1,18 @@
+#contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 15vh;
+}
+#contact .containers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 10vw;
+    height: 10vw;
+}
+.horizontal{
+    width: 80vw;
+    border: 2px solid black;
+}
