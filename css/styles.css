@@ -1,5 +1,5 @@
-@import url(global.css);
-@import url(home.css);
-@import url(techstack.css);
-@import url(projects.css);
-@import url(contact.css);
+@import url(./global.css);
+@import url(./home.css);
+@import url(./techstack.css);
+@import url(./projects.css);
+@import url(./contact.css);
