@@ -19,6 +19,8 @@ document.getElementById('proj9-code-btn').addEventListener('click', function(){
     window.open("https://github.com/IvanVargas21/IvanVargas21-freeCodeCamp_JS_Algorithm_and_DataStructures/tree/main/FormValidation_CalorieCounter")});
 document.getElementById('proj10-code-btn').addEventListener('click', function(){
     window.open("https://github.com/IvanVargas21/IvanVargas21-freeCodeCamp_JS_Algorithm_and_DataStructures/tree/main/RandomColorGenerator", "_blank")});
+document.getElementById('proj11-code-btn').addEventListener('click', function(){
+    window.open("https://github.com/IvanVargas21/javascript-amazon-project", "_blank")});
 
 // for demo buttons on projects
 document.getElementById('proj3-demo-btn').addEventListener('click', function(){
@@ -37,6 +39,8 @@ document.getElementById('proj9-demo-btn').addEventListener('click', function(){
     window.open("projects/FormValidation_CalorieCounter/index.html", '_blank')});
 document.getElementById('proj10-demo-btn').addEventListener('click', function(){
     window.open("projects/RandomColorGenerator/index.html", '_blank')});
+document.getElementById('proj11-demo-btn').addEventListener('click', function(){
+    window.open("projects/javascript-amazon-project/amazon.html", '_blank')});
 
 // // Code button data
 // const codeButtons = [
